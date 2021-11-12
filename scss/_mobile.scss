@@ -143,12 +143,7 @@ h2 {
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-h3 {
-  color: $primary;
-  font-size: 1.2rem;
-  padding-left: 10%;
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);    
-}
+
 
 p {
   color: white;
@@ -202,6 +197,21 @@ q {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center flex-start; 
+
+  h3 {
+    color: $primary;
+    font-size: 1.2rem;
+    padding-left: 10%;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);    
+  }
+
+  p {
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.2rem; 
+    font-weight: 400;
+  }
 }
 
 #contact {

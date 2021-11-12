@@ -1,13 +1,5 @@
 @media screen and (max-width: 768px) {
   html {
-    -ms-scroll-snap-type: mandatory;
-        scroll-snap-type: mandatory;
-    -ms-scroll-snap-points-y: repeat(100vh);
-        scroll-snap-points-y: repeat(100vh);
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -137,12 +129,6 @@
     padding: 15% 0% 0% 12%;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
   }
-  h3 {
-    color: #d3d600;
-    font-size: 1.2rem;
-    padding-left: 10%;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
-  }
   p {
     color: white;
     padding-left: 10%;
@@ -180,7 +166,6 @@
     -webkit-box-pack: center flex-start;
         -ms-flex-pack: center flex-start;
             justify-content: center flex-start;
-    scroll-snap-align: start;
   }
   #about {
     background: #1a1a1a;
@@ -196,7 +181,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    scroll-snap-align: start;
   }
   #portfolio {
     background: #1a1a1a;
@@ -215,7 +199,19 @@
     -webkit-box-pack: center flex-start;
         -ms-flex-pack: center flex-start;
             justify-content: center flex-start;
-    scroll-snap-align: start;
+  }
+  #portfolio h3 {
+    color: #d3d600;
+    font-size: 1.2rem;
+    padding-left: 10%;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  #portfolio p {
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.2rem;
+    font-weight: 400;
   }
   #contact {
     background: #1a1a1a;
@@ -231,7 +227,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    scroll-snap-align: start;
   }
 }
 
@@ -243,6 +238,16 @@
     font-family: 'Rubik', sans-serif;
     background-color: #282828;
     overflow-x: hidden;
+  }
+  html {
+    -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-y: repeat(100vh);
+        scroll-snap-points-y: repeat(100vh);
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   #menuToggle {
     display: block;
