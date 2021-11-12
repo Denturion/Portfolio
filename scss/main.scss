@@ -1,0 +1,9 @@
+// For Mobile
+@media screen and (max-width: 768px) {
+    @import '_mobile';
+}
+
+// For Desktop
+@media screen and (min-width: 768px) {    
+    @import '_desktop';
+}
