@@ -13,6 +13,14 @@ body {
     background-color: $secondary;
     overflow-x: hidden;
 }
+
+html {
+  scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
   
 #menuToggle {
     display: block;

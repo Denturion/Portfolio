@@ -5,12 +5,7 @@ $secondary: #1a1a1a;
 $gradient: #202020;
 
 html {
-  scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
@@ -186,7 +181,6 @@ q {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center flex-start;
-  scroll-snap-align: start;
 }
 
 #about {
@@ -197,7 +191,6 @@ q {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;  
-  scroll-snap-align: start;
 }
 
 #portfolio {
@@ -209,7 +202,6 @@ q {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center flex-start; 
-  scroll-snap-align: start; 
 }
 
 #contact {
@@ -220,5 +212,5 @@ q {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column; 
-  scroll-snap-align: start;
+
 }
