@@ -222,22 +222,26 @@ q {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column; 
+  
+  a {
+    padding: 20% 0% 0% 40%;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
   width: 80%; 
   padding: 10px; 
   border: 1px solid #ccc; 
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 5px; /* Add a top margin */
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 5px; 
   margin-bottom: 10px;
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: $gradient;
   color: $primary;
@@ -247,13 +251,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
-.contactform {
-  
-  padding: 30% 0% 0% 15%;
+.contactform {  
+  padding: 10% 0% 0% 15%;
 }
