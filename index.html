@@ -28,15 +28,18 @@
 </head>
 
 <body>
+  <!--Link for the nav selection "Start" to scroll to top of page-->
   <a id="top"></a>
   <header>
+    <!--Hamburger checkbox for toggling menu-->
     <nav role="navigation">
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
         <span></span>
         <span></span>
-        
+
+        <!--Open menu-->
         <ul id="menu">
           <a href="#top"><li>START</li></a>
           <a href="#about"><li>ABOUT</li></a>
@@ -49,16 +52,17 @@
 <br>
 
   <main>
+    <!--Start/Welcome section-->
     <section id="start">
       <h1>David Funck</h1>
       <q>
          Lorem ipsum dolor sit amet. 
          Et ullam fugiat ut eaque voluptatum cum itaque excepturi sed deserunt voluptas sit eligendi atque. 
-         Eum harum ducimus ea voluptas commodi eum perspiciatis voluptas et autem dolores sit dolor sunt! 
-         
+         Eum harum ducimus ea voluptas commodi eum perspiciatis voluptas et autem dolores sit dolor sunt!          
       </q>    
     </section>
 
+    <!--About section-->
     <section id="about">
       <h2>About</h2>
       <br>
@@ -78,10 +82,10 @@
         <br> 
         ( ) &nbsp;&nbsp;JavaScript
         </span>
-      </p>
-    
+      </p>   
     </section>
 
+    <!--Portfolio section-->
     <section id="portfolio">
       <h2>Portfolio</h2>
 
@@ -99,49 +103,33 @@
       <p>Lorem ipsum dolor sit amet. 
          Et ullam fugiat ut eaque voluptatum cum itaque excepturi sed deserunt voluptas sit eligendi atque. 
       </p>
-
     </section>
 
+    <!--Contact section-->
     <section id="contact">
-      <h2>Contact</h2>
-      
+      <h2>Contact</h2>   
+
+      <!--Social icons-->   
       <div class="social">
       <a href="https://github.com/Denturion" target="_blank"> <img src="img/github.png" alt=""></a>
       </div>
 
-
+      <!--Contactform-->
       <div class="contactform">
         <form action="action_page.php">
       
           <label for="name"></label>
           <input type="text" id="name" name="name" placeholder="Your name..">
-
           <label for="email"></label>
-          <input type="text" id="email" name="email" placeholder="Your email..">         
-      
+          <input type="text" id="email" name="email" placeholder="Your email..">               
           <label for="subject"></label>
-          <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
+          <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>      
+          <input type="submit" value="Submit">      
         </form>
       </div>
-
     </section>
 
-
-  
-
-
   </main>
-
-
-
-
-
-
-
-
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

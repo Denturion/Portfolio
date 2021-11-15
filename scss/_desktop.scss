@@ -4,12 +4,19 @@ $glow: #fcfc4d;
 $secondary: #1a1a1a;
 $gradient: #202020;
 
+//Html
 html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
 
+//Body
 body {
   margin: 0;
   padding: 0;
@@ -19,6 +26,7 @@ body {
   overflow-x: hidden; 
 }
   
+//Menu toggle and hamburger animation
 #menuToggle {
   display: block;
   position: fixed;
@@ -104,6 +112,7 @@ body {
   }
 }
   
+//Menu and list
 #menu {
   background-color: #282828de;
   position: fixed;
@@ -124,12 +133,14 @@ body {
   }
 }
 
+//Main
 main {
   min-width: 768px;
   position: relative;
   margin-top: -1%; 
 }
 
+//Text settings
 h1 {
   color: $primary;
   font-size: 6rem;
@@ -160,6 +171,7 @@ q {
   line-height: 3rem;  
 }
 
+//Skills
 #skills {
   color: $primary;
   line-height: 2.5rem; 
@@ -167,18 +179,20 @@ q {
   font-size: 2rem;
 }
 
+//Start/Welcome section
 #start {
   background: $secondary;
   background: linear-gradient(27deg, $secondary 50%, $gradient 50%);
   position: relative;
   height: 100vh;
-  
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center flex-start;
+  scroll-snap-align: start;
 }
 
+//About section
 #about {
   background: $secondary;
   background: linear-gradient(333deg, $secondary 50%, $gradient 50%);
@@ -187,8 +201,10 @@ q {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;  
+  scroll-snap-align: start;
 }
 
+//Portfolio section
 #portfolio {
   background: $secondary;
   background: linear-gradient(27deg, $secondary 50%, $gradient 50%);
@@ -198,6 +214,7 @@ q {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center flex-start; 
+  scroll-snap-align: start;
 
   h3 {
     color: $primary;
@@ -207,6 +224,7 @@ q {
   } 
 }
 
+//Contact section
 #contact {
   background: $secondary;
   background: linear-gradient(333deg, $secondary 50%, $gradient 50%);
@@ -215,6 +233,7 @@ q {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column; 
+  scroll-snap-align: start;
   
   a {
     padding: 20% 0% 0% 45%;
@@ -222,6 +241,7 @@ q {
   }
 }
 
+//Contact form
 input[type=text], select, textarea {
   width: 60%; 
   padding: 10px; 

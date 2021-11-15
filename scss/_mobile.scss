@@ -4,12 +4,14 @@ $glow: #fcfc4d;
 $secondary: #1a1a1a;
 $gradient: #202020;
 
+//Html
 html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
 
+//Body
 body {
   margin: 0;
   padding: 0;
@@ -19,6 +21,7 @@ body {
   overflow-x: hidden; 
 }
   
+//Menu toggle and hamburger animation
 #menuToggle {
   display: block;
   position: fixed;
@@ -40,10 +43,7 @@ body {
     text-shadow: 0px 5px 3px rgba(0,0,0,.3);
     -webkit-tap-highlight-color: transparent;
   }
-  
-
-  
-  
+      
   input {
     display: block;
     width: 50px;
@@ -101,6 +101,7 @@ body {
   }
 }
   
+//Menu and list
 #menu {
   background-color: #282828de;
   position: fixed;
@@ -122,6 +123,7 @@ body {
   }
 }
   
+//Main
 main {
   min-width: 200px;
   max-width: 768px;
@@ -129,6 +131,7 @@ main {
   margin-top: -4%;
 }
 
+//Text settings
 h1 {
   color: $primary;
   font-size: 4rem;
@@ -142,8 +145,6 @@ h2 {
   padding: 15% 0% 0% 12%;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
-
-
 
 p {
   color: white;
@@ -159,6 +160,7 @@ q {
   line-height: 2rem;  
 }
 
+//Skills
 #skills {
   color: $primary;
   line-height: 2.5rem; 
@@ -166,6 +168,7 @@ q {
   font-size: 1.5rem;
 }
 
+//Start/Welcome section
 #start {
   background: $secondary;
   background: linear-gradient(60.5deg, $secondary 50%, $gradient 50%);
@@ -178,6 +181,7 @@ q {
   justify-content: center flex-start;
 }
 
+//About section
 #about {
   background: $secondary;
   background: linear-gradient(299.5deg, $secondary 50%, $gradient 50%);
@@ -188,6 +192,7 @@ q {
   flex-direction: column;  
 }
 
+//Portfolio section
 #portfolio {
   background: $secondary;
   background: linear-gradient(60.5deg, $secondary 50%, $gradient 50%);
@@ -214,6 +219,7 @@ q {
   }
 }
 
+//Contact section
 #contact {
   background: $secondary;
   background: linear-gradient(299.5deg, $secondary 50%, $gradient 50%);
@@ -229,8 +235,7 @@ q {
   }
 }
 
-
-
+//Contact form
 input[type=text], select, textarea {
   width: 80%; 
   padding: 10px; 
@@ -243,6 +248,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
+  display: block;
   background-color: $gradient;
   color: $primary;
   padding: 12px 20px;
